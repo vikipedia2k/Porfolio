@@ -2,14 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Vivek-Resume.pdf";
+import myPdf from "../../Assets/../Assets/Resume.pdf"; // import the PDF file
+
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-const resumeLink =
-  "https://drive.google.com/file/d/1Z5xEERebvPodKIpOvwRhz2l3XtJCHKjp/view?usp=sharing";
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -25,7 +23,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={myPdf} // use myPdf instead of pdf
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -34,16 +32,18 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "1400px" }}>
+  <div style={{ width: "60%", height: "80%", border: "1px solid black" }}>
+    <iframe src="https://drive.google.com/file/d/1IzW8n9iceBlPzNLdCHRrWGiJcXMmT_Xn/preview" frameborder="0" height="100%" width="100%" style={{ margin: 0, padding: 0 }}></iframe>
+  </div>
+</div>
+
+      
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={myPdf} // use myPdf instead of pdf
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
