@@ -34,7 +34,7 @@ function ResumeNew() {
 
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "1400px" }}>
   <div style={{ width: "60%", height: "80%", border: "1px solid black" }}>
-    <iframe src="https://drive.google.com/file/d/1s7QzfbiMBzSgiAuYFxnfM9eWML-Oxto0/preview" frameborder="0" height="100%" width="100%" style={{ margin: 0, padding: 0 }}></iframe>
+    <iframe src="https://drive.google.com/file/d/1aeIU5-qrZCH6UK9qj14_qaYo-GiriAKP/preview" frameborder="0" height="100%" width="100%" style={{ margin: 0, padding: 0 }}></iframe>
   </div>
 </div>
 
